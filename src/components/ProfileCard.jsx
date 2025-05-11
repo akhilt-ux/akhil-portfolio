@@ -14,11 +14,11 @@ export default function ProfileCard() {
         hidden lg:flex   /* hide on small screens, show on desktop */
       "
     >
-      <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-white mb-6">
+      <div className="flex flex-col items-center md:flex-row">
         <img
           src="/profile.JPG" /* put your image in public/ */
           alt="Akhil T"
-          className="object-cover w-full h-full"
+          className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto"
         />
       </div>
       <h2 className="text-2xl font-semibold mb-2">Akhil T</h2>
