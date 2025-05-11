@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/akhil-portfolio/static/css/main.ca5d117b.css",
+    "main.js": "/akhil-portfolio/static/js/main.2efc0221.js",
+    "index.html": "/akhil-portfolio/index.html",
+    "main.ca5d117b.css.map": "/akhil-portfolio/static/css/main.ca5d117b.css.map",
+    "main.2efc0221.js.map": "/akhil-portfolio/static/js/main.2efc0221.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca5d117b.css",
+    "static/js/main.2efc0221.js"
+  ]
+}
