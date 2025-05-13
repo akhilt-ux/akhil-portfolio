@@ -1,7 +1,9 @@
+// pages/ExperienceDetail.jsx
 import React from "react";
+import { useParams, Link } from "react-router-dom";
 
-const experiences = [
-  {
+const experienceDetails = {
+  "us-bank": {
     title: "Sr. Full Stack Developer",
     company: "US Bank",
     period: "Apr 2024 – Present",
@@ -26,7 +28,7 @@ const experiences = [
       "AI/ML (TensorFlow + Flask)",
     ],
   },
-  {
+  elevance: {
     title: "Sr. Full Stack Java Developer",
     company: "Elevance Health",
     period: "Aug 2022 – Mar 2024",
@@ -49,7 +51,7 @@ const experiences = [
       "Redis",
     ],
   },
-  {
+  costco: {
     title: "Full Stack Developer",
     company: "Costco Wholesale",
     period: "Feb 2021 – Jul 2022",
@@ -71,7 +73,7 @@ const experiences = [
       "GraphQL",
     ],
   },
-  {
+  "key-bank": {
     title: "Java Developer",
     company: "Key Bank",
     period: "Apr 2019 – Jan 2021",
@@ -91,7 +93,7 @@ const experiences = [
       "Jenkins",
     ],
   },
-  {
+  "state-farm": {
     title: "Java Developer",
     company: "State Farm",
     period: "Oct 2016 – Dec 2018",
@@ -108,43 +110,45 @@ const experiences = [
       "HTML/CSS/JavaScript",
     ],
   },
-];
+};
 
-const Experience = () => {
+const ExperienceDetail = () => {
+  const { clientId } = useParams();
+  const detail = experienceDetails[clientId];
+
+  if (!detail)
+    return <div className="text-white p-10">Experience not found.</div>;
+
   return (
-    <section className="py-16 px-6 bg-transparent text-white" id="experience">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-8 gradient-text">
-          Experience
+    <section className="py-16 px-6 bg-transparent text-white">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold gradient-text mb-2">
+          {detail.title} @ {detail.company}
         </h2>
-        {experiences.map((exp, idx) => (
-          <div key={idx} className="mb-10">
-            <h3 className="text-2xl font-semibold">
-              {exp.title} @ {exp.company}
-            </h3>
-            <p className="text-sm italic">{exp.period}</p>
-            <ul className="list-disc ml-6 mt-2 space-y-1">
-              {exp.details.map((detail, i) => (
-                <li key={i}>{detail}</li>
-              ))}
-            </ul>
-
-            {/* ✅ Key Tech as badges */}
-            <div className="flex flex-wrap gap-2 mt-4">
-              {exp.tech.map((techItem, i) => (
-                <span
-                  key={i}
-                  className="bg-blue-400/20 text-blue-400 px-2 py-1 rounded text-sm"
-                >
-                  {techItem}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
+        <p className="italic text-sm text-gray-400 mb-4">{detail.period}</p>
+        <ul className="list-disc ml-6 space-y-2">
+          {detail.details.map((point, idx) => (
+            <li key={idx}>{point}</li>
+          ))}
+        </ul>
+        <div className="flex flex-wrap gap-2 mt-6">
+          {detail.tech.map((tech, idx) => (
+            <span
+              key={idx}
+              className="bg-blue-400/20 text-blue-300 px-3 py-1 rounded-full text-sm"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+        <Link to="/experience">
+          <button className="mt-10 px-5 py-2 bg-blue-600 hover:bg-blue-700 rounded shadow text-white">
+            ← Back to Experience
+          </button>
+        </Link>
       </div>
     </section>
   );
 };
 
-export default Experience;
+export default ExperienceDetail;

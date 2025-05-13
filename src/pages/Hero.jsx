@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -28,18 +28,7 @@ export default function Hero() {
       </motion.h1>
 
       {/* Animated Subtext */}
-      {/* <motion.p
-        className="text-lg md:text-xl max-w-2xl mb-6 typing-effect"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 2.8, ease: "easeOut" }}
-      >
-        Cloud-Native Architect | Sr. Full Stack Java Developer | AI/ML
-        Enthusiast
-      </motion.p> */}
-
-      {/* {Animated waves} */}
-      <p className="text-lg md:text-xl max-w-2xl mb-6 wave-effect">
+      <p className="text-lg md:text-xl max-w-2xl mb-4 wave-effect">
         {[
           "Cloud-Native Architect",
           "|",
@@ -60,32 +49,38 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 2.8 }}
       >
-        {/* <a
-          href="https://github.com/YOUR_GITHUB"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub size={30} />
-        </a> */}
         <a
           href="https://linkedin.com/in/akhil-uf01"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-blue-500 hover:text-blue-300"
         >
           <FaLinkedin size={30} />
         </a>
       </motion.div>
 
-      {/* CTA Button */}
+      {/* CTA Button: Direct LinkedIn connect */}
       <motion.a
-        href="#contact"
+        href="https://www.linkedin.com/in/akhil-uf01"
+        target="_blank"
+        rel="noopener noreferrer"
         className="mt-8 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg shadow-lg text-lg"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.9, duration: 2.8 }}
       >
-        Let’s Connect
+        Let’s Connect on LinkedIn
       </motion.a>
+
+      {/* Pro Tip */}
+      <motion.p
+        className="mt-4 text-sm text-gray-400 italic"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.8 }}
+      >
+        Send me a LinkedIn request 🚀
+      </motion.p>
     </section>
   );
 }

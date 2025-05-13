@@ -1,44 +1,50 @@
-import React from 'react';
-import ProfileCard        from './components/ProfileCard';
-import Hero               from './components/Hero';
-import About              from './components/About';
-import FunFact            from './components/FunFact';
-import Experience         from './components/Experience';
-// import Projects           from './components/Projects';
-import Contact            from './components/Contact';
-import SkillsSection      from './components/SkillsSection';
-import SideNav            from './components/SideNav';
-import Certifications     from './components/Certifications';
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
+import SideNav from "./components/SideNav";
+import ProfileCard from "./components/ProfileCard";
+import OffCanvasMenu from "./components/OffCanvasMenu";
+import PageWrapper from "./components/PageWrapper";
 
+import Hero from "./pages/Hero";
+import About from "./pages/About";
+import Skills from "./pages/SkillsSection";
+import Experience from "./components/ExperienceTimeline";
+import ExperienceDetail from "./pages/ExperienceDetail";
+import Certifications from "./pages/Certifications";
+import Contact from "./pages/Contact";
+
+function AppContent() {
+  const location = useLocation();
+
+  return (
+    <div className="relative overflow-hidden min-h-screen">
+      <div className="circle-rotator"></div>
+
+      {location.pathname === "/" && <ProfileCard />}  
+      <OffCanvasMenu />
+      <SideNav />
+
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<PageWrapper><Hero /></PageWrapper>} />
+          <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
+          <Route path="/skills" element={<PageWrapper><Skills /></PageWrapper>} />
+          <Route path="/experience" element={<PageWrapper><Experience /></PageWrapper>} />
+          <Route path="/experience/:clientId" element={<PageWrapper><ExperienceDetail /></PageWrapper>} />
+          <Route path="/certifications" element={<PageWrapper><Certifications /></PageWrapper>} />
+          <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
+        </Routes>
+      </AnimatePresence>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="relative overflow-hidden min-h-screen">
-      <div class="circle-rotator"></div>
-      
-      {/* <ParticlesBackground /> */}
-
-      {/* ✅ Floating card at left side */}
-      <ProfileCard />
-
-      {/* ✅ Side navigation */}
-      <SideNav />
-
-      {/* ✅ Hero section */}
-      <Hero />
-      
-      {/* ✅ Main content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-4 lg:pl-80">
-        <About />
-        <FunFact />
-        <SkillsSection />
-        <Experience />
-        <Certifications />
-        {/* <Projects /> */}
-        <Contact />
-      </div>
-    </div>
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 
