@@ -43,6 +43,11 @@ const OffCanvasMenu = () => {
             </Link>
           </li>
           <li>
+            <Link to="/projects" onClick={toggleMenu}>
+              Projects
+            </Link>
+          </li>
+          <li>
             <Link to="/contact" onClick={toggleMenu}>
               Contact
             </Link>

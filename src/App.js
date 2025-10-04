@@ -12,6 +12,7 @@ import Skills from "./pages/SkillsSection";
 import Experience from "./components/ExperienceTimeline";
 import ExperienceDetail from "./pages/ExperienceDetail";
 import Certifications from "./pages/Certifications";
+import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
 function AppContent() {
@@ -32,6 +33,7 @@ function AppContent() {
           <Route path="/skills" element={<PageWrapper><Skills /></PageWrapper>} />
           <Route path="/experience" element={<PageWrapper><Experience /></PageWrapper>} />
           <Route path="/experience/:clientId" element={<PageWrapper><ExperienceDetail /></PageWrapper>} />
+          <Route path="/projects" element={<PageWrapper><Projects /></PageWrapper>} />
           <Route path="/certifications" element={<PageWrapper><Certifications /></PageWrapper>} />
           <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
         </Routes>

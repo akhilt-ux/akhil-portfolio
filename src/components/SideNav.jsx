@@ -7,6 +7,7 @@ import {
   FaBriefcase,
   FaEnvelope,
   FaCertificate,
+  FaProjectDiagram
 } from "react-icons/fa";
 
 const SideNav = () => {
@@ -20,6 +21,7 @@ const SideNav = () => {
         icon={<FaBriefcase size={20} />}
         label="Experience"
       />
+      <NavItem href="/projects" icon={<FaProjectDiagram size={20} />} label="Projects" />
       <NavItem
         href="/certifications"
         icon={<FaCertificate size={20} />}
