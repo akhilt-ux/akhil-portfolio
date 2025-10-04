@@ -10,7 +10,7 @@ const About = () => {
             Get to know me!
           </h2>
           <p className="text-lg">
-            I’m a results-driven Full Stack Java Developer with 9+ years of
+            I’m a results-driven Full Stack Java Developer with 6 years of
             experience building scalable, cloud-native applications across
             finance, healthcare, and retail industries. My expertise spans Java,
             Spring Boot, Microservices, React, Angular, Python, Kafka, AWS, and

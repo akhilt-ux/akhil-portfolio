@@ -21,9 +21,9 @@ export default function ProfileCard() {
           className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto"
         />
       </div>
-      <h2 className="text-2xl font-semibold mb-2">Akhil T</h2>
+      <h2 className="text-2xl font-semibold mb-2">Akhil Reddy</h2>
       <p className="text-base text-white/80 mb-2">SR. FULL STACK DEVELOPER</p>
-      <p className="text-base text-white/80 mb-6">akhil.uf01@gmail.com</p>
+      <p className="text-base text-white/80 mb-6">akhilreddytekula1313@gmail.com</p>
       <div className="flex space-x-6 mb-6">
         <a
           href="https://linkedin.com/in/akhil-uf01"

@@ -9,45 +9,29 @@ dayjs.extend(relativeTime);
 
 const experiences = [
   {
-    id: "us-bank",
-    company: "US Bank",
-    title: "Sr. Full Stack Developer",
-    period: "Apr 2024 – Present",
-    start: "2024-04-01",
+    id: "kroger",
+    company: "Kroger",
+    title: "Sr. Full Stack Java Developer",
+    period: "Feb 2025 – Present",
+    start: "2025-02-01",
     end: null,
   },
   {
-    id: "elevance",
-    company: "Elevance Health",
-    title: "Sr. Full Stack Java Developer",
-    period: "Aug 2022 – Mar 2024",
-    start: "2022-08-01",
-    end: "2024-03-01",
+    id: "amazon",
+    company: "Amazon",
+    title: " Software Development Engineer",
+    period: "May 2022 – Jan 2025",
+    start: "2022-08-02",
+    end: "2025-01-20",
   },
   {
-    id: "costco",
-    company: "Costco Wholesale",
-    title: "Full Stack Developer",
-    period: "Feb 2021 – Jul 2022",
-    start: "2021-02-01",
-    end: "2022-07-01",
-  },
-  {
-    id: "key-bank",
-    company: "Key Bank",
-    title: "Java Developer",
-    period: "Apr 2019 – Jan 2021",
-    start: "2019-04-01",
-    end: "2021-01-01",
-  },
-  {
-    id: "state-farm",
-    company: "State Farm",
-    title: "Java Developer",
-    period: "Oct 2016 – Dec 2018",
-    start: "2016-10-01",
-    end: "2018-12-01",
-  },
+    id: "subex",
+    company: "Subex",
+    title: "Software Developer",
+    period: "Jan 2019 – Aug 2021",
+    start: "2019-01-21",
+    end: "2021-08-01",
+  }
 ];
 
 const formatDuration = (start, end) => {
