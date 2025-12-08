@@ -32,7 +32,7 @@ export default function Hero() {
           {[
             "Cloud-Native Architect",
             "|",
-            "Sr. Full Stack Java Developer",
+            "Senior Software Development Engineer",
             "|",
             "AI/ML Enthusiast",
           ].map((word, i) => (
@@ -50,7 +50,7 @@ export default function Hero() {
             transition={{delay: 0.6, duration: 2.8}}
         >
           <a
-              href="https://linkedin.com/in/akhil-uf01"
+              href="http://linkedin.com/in/akhil9856"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-300"
@@ -61,7 +61,7 @@ export default function Hero() {
 
         <div className="flex gap-4 mt-8">
           <motion.a
-              href="https://www.linkedin.com/in/akhil-uf01"
+              href="http://linkedin.com/in/akhil9856"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg shadow-lg text-lg"
@@ -73,7 +73,7 @@ export default function Hero() {
           </motion.a>
 
           <motion.a
-              href="/resume.pdf" // Add your resume to public folder
+              href="/akhilreddy_resume.pdf" // Add your resume to public folder
               download
               className="px-6 py-3 bg-gray-700 hover:bg-gray-600 rounded-lg shadow-lg text-lg"
               initial={{opacity: 0, y: 20}}

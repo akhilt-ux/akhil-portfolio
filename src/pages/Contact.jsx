@@ -46,7 +46,7 @@ const Contact = () => {
           className="flex items-center gap-3 text-lg hover:text-blue-400 transition"
         >
           <FaEnvelope size={28} className="text-red-500" />
-          akhilreddytekula1313@gmail.com
+
         </a>
         <a
           href="http://linkedin.com/in/akhil9856"
