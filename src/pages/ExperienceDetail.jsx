@@ -39,7 +39,7 @@ const experienceDetails = {
   amazon: {
     title: "Software Development Engineer",
     company: "Amazon",
-    period: "May 2022 – Jan 2025",
+    period: "August 2022 – Jan 2025",
     details: [
       "Developed 'Prime Traffic Insights', a full-stack traffic analysis platform for Prime Video leadership, reducing routing decision-making time by 40% and enabling real-time traffic management for 10M+ concurrent viewers during high-profile events like Thursday Night Football.",
       "Built scalable backend workflow using Python and AWS S3 to preprocess raw JSON telemetry data, transforming petabytes of streaming metrics into actionable insights with Java/Spring Boot APIs and React.js dashboards.",

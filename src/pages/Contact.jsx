@@ -42,20 +42,20 @@ const Contact = () => {
       {/* Contact Links */}
       <div className="flex flex-col sm:flex-row justify-center items-center gap-8 mb-10">
         <a
-          href="mailto:akhil.uf01@gmail.com"
+          href="akhilreddytekula1313@gmail.com"
           className="flex items-center gap-3 text-lg hover:text-blue-400 transition"
         >
           <FaEnvelope size={28} className="text-red-500" />
-          akhil.uf01@gmail.com
+          akhilreddytekula1313@gmail.com
         </a>
         <a
-          href="https://linkedin.com/in/akhil-uf01"
+          href="http://linkedin.com/in/akhil9856"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3 text-lg hover:text-blue-400 transition"
         >
           <FaLinkedin size={28} className="text-blue-600" />
-          linkedin.com/in/akhil-uf01
+          linkedin.com/in/akhil
         </a>
       </div>
 

@@ -20,7 +20,7 @@ const experiences = [
     id: "amazon",
     company: "Amazon",
     title: " Software Development Engineer",
-    period: "May 2022 – Jan 2025",
+    period: "August 2022 – Jan 2025",
     start: "2022-08-02",
     end: "2025-01-20",
   },

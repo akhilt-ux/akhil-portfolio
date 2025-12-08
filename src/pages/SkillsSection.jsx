@@ -38,6 +38,27 @@ import {
   SiMicrosoftazure,
 } from "react-icons/si";
 
+// Custom SVG Icons
+const DynatraceIcon = ({ size = 32 }) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <path d="M12 2L2 7v10c0 5.55 3.84 10.74 10 12 6.16-1.26 10-6.45 10-12V7l-10-5z" fill="#1496FF"/>
+    </svg>
+);
+
+const HarnessIcon = ({ size = 32 }) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="12" r="10" fill="#00ADE4"/>
+      <path d="M8 12h8M12 8v8" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+    </svg>
+);
+
+const RancherIcon = ({ size = 32 }) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <rect x="3" y="3" width="18" height="18" rx="2" fill="#0075A8"/>
+      <path d="M8 8h8v8H8z" fill="white"/>
+    </svg>
+);
+
 const cardVariants = {
   offscreen: (i) => ({
     y: 120,
@@ -127,6 +148,9 @@ const SkillsSection = () => {
         },
         { icon: <FaJenkins size={32} color="#D24939" />, label: "Jenkins" },
         { icon: <FaLinux size={32} color="#FCC624" />, label: "Linux" },
+        { icon: <DynatraceIcon size={32} />, label: "Dynatrace" },
+        { icon: <HarnessIcon size={32} />, label: "Harness" },
+        { icon: <RancherIcon size={32} />, label: "Rancher" }
       ],
     },
     {
@@ -143,44 +167,44 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section className="py-16 px-6 bg-transparent text-white" id="skills">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-8 text-center gradient-text">
-          Skills
-        </h2>
-        {skillGroups.map((group, gi) => (
-          <div className="mb-12" key={group.title}>
-            <h3 className="text-2xl font-semibold mb-4 border-b border-gray-700 pb-2">
-              {group.title}
-            </h3>
-            <motion.div
-              className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6"
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.2 }}
-            >
-              {group.skills.map((skill, si) => (
+      <section className="py-16 px-6 bg-transparent text-white" id="skills">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-8 text-center gradient-text">
+            Skills
+          </h2>
+          {skillGroups.map((group, gi) => (
+              <div className="mb-12" key={group.title}>
+                <h3 className="text-2xl font-semibold mb-4 border-b border-gray-700 pb-2">
+                  {group.title}
+                </h3>
                 <motion.div
-                  key={skill.label}
-                  className="flex flex-col items-center bg-gray-800 hover:bg-gray-700 rounded-lg p-4 shadow-lg"
-                  custom={si}
-                  variants={cardVariants}
-                  initial="offscreen"
-                  whileInView="onscreen"
-                  viewport={{ once: false, amount: 0.4 }}
+                    className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: false, amount: 0.2 }}
                 >
-                  {skill.icon}
-                  <span className="mt-2 text-sm text-center">
+                  {group.skills.map((skill, si) => (
+                      <motion.div
+                          key={skill.label}
+                          className="flex flex-col items-center bg-gray-800 hover:bg-gray-700 rounded-lg p-4 shadow-lg"
+                          custom={si}
+                          variants={cardVariants}
+                          initial="offscreen"
+                          whileInView="onscreen"
+                          viewport={{ once: false, amount: 0.4 }}
+                      >
+                        {skill.icon}
+                        <span className="mt-2 text-sm text-center">
                     {skill.label}
                   </span>
+                      </motion.div>
+                  ))}
                 </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        ))}
-      </div>
-    </section>
+              </div>
+          ))}
+        </div>
+      </section>
   );
 };
 

@@ -4,34 +4,22 @@ import { Link } from "react-router-dom";
 
 const experiences = [
   {
-    id: "us-bank",
-    title: "Sr. Full Stack Developer",
-    company: "US Bank",
-    period: "Apr 2024 – Present",
-  },
-  {
-    id: "elevance",
+    id: "kroger",
+    company: "Kroger",
     title: "Sr. Full Stack Java Developer",
-    company: "Elevance Health",
-    period: "Aug 2022 – Mar 2024",
+    period: "Feb 2025 – Present",
   },
   {
-    id: "costco",
-    title: "Full Stack Developer",
-    company: "Costco Wholesale",
-    period: "Feb 2021 – Jul 2022",
+    id: "amazon",
+    company: "Amazon",
+    title: " Software Development Engineer",
+    period: "August 2022 – Jan 2025",
   },
   {
-    id: "key-bank",
-    title: "Java Developer",
-    company: "Key Bank",
-    period: "Apr 2019 – Jan 2021",
-  },
-  {
-    id: "state-farm",
-    title: "Java Developer",
-    company: "State Farm",
-    period: "Oct 2016 – Dec 2018",
+    id: "subex",
+    company: "Subex",
+    title: "Software Developer",
+    period: "Jan 2019 – Aug 2021",
   },
 ];
 
