@@ -50,7 +50,7 @@ export default function Hero() {
             transition={{delay: 0.6, duration: 2.8}}
         >
           <a
-              href="http://linkedin.com/in/akhil9856"
+              href="www.linkedin.com/in/akhilreddy-ar"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-300"
@@ -61,7 +61,7 @@ export default function Hero() {
 
         <div className="flex gap-4 mt-8">
           <motion.a
-              href="http://linkedin.com/in/akhil9856"
+              href="www.linkedin.com/in/akhilreddy-ar"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg shadow-lg text-lg"

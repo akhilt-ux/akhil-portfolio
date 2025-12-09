@@ -23,10 +23,10 @@ export default function ProfileCard() {
       </div>
       <h2 className="text-2xl font-semibold mb-2">Akhil Reddy</h2>
       <p className="text-base text-white/80 mb-2">Senior Software Engineer</p>
-      <p className="text-base text-white/80 mb-6">akhilreddytekula1313@gmail.com</p>
+      <p className="text-base text-white/80 mb-6">akhilreddyar989@gmail.com</p>
       <div className="flex space-x-6 mb-6">
         <a
-          href="http://linkedin.com/in/akhil9856"
+          href="www.linkedin.com/in/akhilreddy-ar"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-300"
@@ -35,7 +35,7 @@ export default function ProfileCard() {
         </a>
       </div>
       <a
-        href="mailto:akhilreddytekula1313@gmail.com"
+        href="mailto:akhilreddyar989@gmail.com"
         className="flex items-center justify-center px-6 py-3 bg-[#0e3c4c] hover:bg-[#0c3240] rounded-xl text-white text-base font-medium shadow-lg space-x-2 border border-gray-400 transition"
       >
         <FaEnvelope size={18} />
