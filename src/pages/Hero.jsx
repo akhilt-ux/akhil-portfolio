@@ -25,7 +25,7 @@ const Hero = () => {
                 >
                     <div className="relative inline-block mb-6">
                         <img
-                            src="/profile.jpg"
+                            src="/profile.JPG"
                             alt="Akhil Reddy"
                             className="w-32 h-32 md:w-44 md:h-44 rounded-[2.5rem] mx-auto object-cover border-4 border-blue-500/20 shadow-blue-500/10 shadow-xl"
                         />
