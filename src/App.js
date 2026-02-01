@@ -9,6 +9,7 @@ import Skills from "./pages/SkillsSection";
 import Experience from "./components/ExperienceTimeline";
 import ExperienceDetail from "./pages/ExperienceDetail";
 import Projects from "./pages/Projects";
+import Certifications from "./pages/Certifications";
 import Contact from "./pages/Contact";
 
 function ScrollSpy() {
@@ -33,14 +34,15 @@ const LandingPage = () => (
     <div className="flex flex-col items-center w-full">
         {/* Hero now contains BOTH the ProfileCard and the Introduction */}
         <section id="hero" className="w-full min-h-screen flex items-center justify-center pt-20 md:pt-0">
-            <Hero />
+            <Hero/>
         </section>
 
-        <section id="about" className="w-full min-h-screen flex items-center justify-center"><About /></section>
-        <section id="skills" className="w-full min-h-screen flex items-center justify-center"><Skills /></section>
-        <section id="experience" className="w-full min-h-screen flex items-center justify-center"><Experience /></section>
-        <section id="projects" className="w-full min-h-screen flex items-center justify-center"><Projects /></section>
-        <section id="contact" className="w-full min-h-screen flex items-center justify-center"><Contact /></section>
+        <section id="about" className="w-full min-h-screen flex items-center justify-center"><About/></section>
+        <section id="skills" className="w-full min-h-screen flex items-center justify-center"><Skills/></section>
+        <section id="experience" className="w-full min-h-screen flex items-center justify-center"><Experience/></section>
+        <section id="projects" className="w-full min-h-screen flex items-center justify-center"><Projects/></section>
+        <section id="certifications" className="w-full min-h-screen flex items-center justify-center"><Certifications/></section>
+        <section id="contact" className="w-full min-h-screen flex items-center justify-center"><Contact/></section>
     </div>
 );
 
