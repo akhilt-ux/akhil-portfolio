@@ -26,7 +26,7 @@ export default function ProfileCard() {
       <p className="text-base text-white/80 mb-6">akhilreddyar989@gmail.com</p>
       <div className="flex space-x-6 mb-6">
         <a
-          href="www.linkedin.com/in/akhilreddy-ar"
+          href="http://linkedin.com/in/akhilreddy-ar"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-300"

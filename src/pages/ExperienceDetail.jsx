@@ -6,7 +6,7 @@ const experienceDetails = {
   kroger: {
     title: "Sr. Full Java Stack Developer",
     company: "Kroger",
-    period: "Feb 2025 – Present",
+    period: "Jan 2025 – Present",
     details: [
       "Spearheaded enterprise-wide Java 8 to Java 21 migration across multiple production services, managing dependency upgrades, resolving complex compatibility issues, automated testing via GitHub Actions, and zero-downtime deployments.",
       "Revolutionized integration testing infrastructure by migrating from embedded Cassandra to TestContainers, creating production-parity environments that eliminated flaky tests, enabled parallel test execution, and improved CI/CD pipeline reliability by 40%.",

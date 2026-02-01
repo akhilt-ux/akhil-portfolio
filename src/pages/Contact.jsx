@@ -42,14 +42,14 @@ const Contact = () => {
       {/* Contact Links */}
       <div className="flex flex-col sm:flex-row justify-center items-center gap-8 mb-10">
         <a
-          href="akhilreddyar989@gmail.com"
+          href="mailto:akhilreddyar989@gmail.com"
           className="flex items-center gap-3 text-lg hover:text-blue-400 transition"
         >
           <FaEnvelope size={28} className="text-red-500" />
           akhilreddyar989@gmail.com
         </a>
         <a
-          href="www.linkedin.com/in/akhilreddy-ar"
+          href="http://linkedin.com/in/akhilreddy-ar"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3 text-lg hover:text-blue-400 transition"

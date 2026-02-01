@@ -12,7 +12,7 @@ const experiences = [
     id: "kroger",
     company: "Kroger",
     title: "Sr. Full Stack Java Developer",
-    period: "Feb 2025 – Present",
+    period: "Jan 2025 – Present",
     start: "2025-02-01",
     end: null,
   },
