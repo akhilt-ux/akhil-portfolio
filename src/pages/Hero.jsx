@@ -59,6 +59,18 @@ export default function Hero() {
           </a>
         </motion.div>
 
+          {/* Mouse Scroll Option */}
+          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60">
+              <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center p-1">
+                  <motion.div
+                      className="w-1.5 h-1.5 bg-blue-400 rounded-full"
+                      animate={{ y: [0, 15, 0] }}
+                      transition={{ duration: 1.5, repeat: Infinity }}
+                  />
+              </div>
+              <span className="text-[10px] uppercase tracking-widest text-white/50">Scroll</span>
+          </div>
+
         <div className="flex gap-4 mt-8">
           <motion.a
               href="http://linkedin.com/in/akhilreddy-ar"

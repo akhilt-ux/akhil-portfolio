@@ -1,4 +1,3 @@
-// pages/ExperienceDetail.jsx
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 
@@ -115,38 +114,25 @@ const ExperienceDetail = () => {
   const { clientId } = useParams();
   const detail = experienceDetails[clientId];
 
-  if (!detail)
-    return <div className="text-white p-10">Experience not found.</div>;
+  if (!detail) return <div className="text-white p-10">Not found.</div>;
 
   return (
-    <section className="py-16 px-6 bg-transparent text-white">
-      <div className="max-w-4xl mx-auto">
+      <section className="py-16 px-6 text-white max-w-4xl mx-auto">
+        <Link to="/#experience" className="text-blue-400 hover:underline mb-8 inline-block">
+          ← Back to Experience
+        </Link>
+
         <h2 className="text-3xl font-bold gradient-text mb-2">
           {detail.title} @ {detail.company}
         </h2>
-        <p className="italic text-sm text-gray-400 mb-4">{detail.period}</p>
-        <ul className="list-disc ml-6 space-y-2">
+        <p className="italic text-gray-400 mb-6">{detail.period}</p>
+
+        <ul className="list-disc ml-6 space-y-4">
           {detail.details.map((point, idx) => (
-            <li key={idx}>{point}</li>
+              <li key={idx} className="text-gray-200">{point}</li>
           ))}
         </ul>
-        <div className="flex flex-wrap gap-2 mt-6">
-          {detail.tech.map((tech, idx) => (
-            <span
-              key={idx}
-              className="bg-blue-400/20 text-blue-300 px-3 py-1 rounded-full text-sm"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
-        <Link to="/experience">
-          <button className="mt-10 px-5 py-2 bg-blue-600 hover:bg-blue-700 rounded shadow text-white">
-            ← Back to Experience
-          </button>
-        </Link>
-      </div>
-    </section>
+      </section>
   );
 };
 
