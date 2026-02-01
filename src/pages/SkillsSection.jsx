@@ -170,7 +170,7 @@ const SkillsSection = () => {
       <section className="py-16 px-6 bg-transparent text-white" id="skills">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-8 text-center gradient-text">
-            Skills
+            Technical Skills
           </h2>
           {skillGroups.map((group, gi) => (
               <div className="mb-12" key={group.title}>

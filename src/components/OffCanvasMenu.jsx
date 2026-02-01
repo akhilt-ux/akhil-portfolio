@@ -29,7 +29,7 @@ const OffCanvasMenu = () => {
           </li>
           <li>
             <Link to="/skills" onClick={toggleMenu}>
-              Skills
+              Technical Skills
             </Link>
           </li>
           <li>
