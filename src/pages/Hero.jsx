@@ -25,7 +25,7 @@ const Hero = () => {
     const aboutScale = useTransform(scrollYProgress, [0, 0.4], [1, 0.9]);
 
     return (
-        <div ref={containerRef} className="relative h-[250vh] bg-[#020617]">
+        <div ref={containerRef} className="relative h-[140vh] bg-[#020617]">
             {/* ANCHOR POINTS FOR SIDENAV
                These help your ScrollSpy detect which "section" you are in
             */}
